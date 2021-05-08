@@ -1,0 +1,166 @@
+/* .header {
+  padding: 1px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+} */
+
+#err {
+    text-align: center;
+}
+
+.txt {
+ width: 300px;
+ padding: 5px 5px;
+ margin: 5px 0px;
+ box-sizing: border-box; 
+}
+
+.logBtn {
+    /* margin: 5px 1px; */
+    /* border-radius: 8px; */
+    border: none;
+    color: white;
+    background: hsl(205, 51%, 66%);
+    padding: 5px; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#btnLogout {
+    float: right;
+    padding: 20px 20px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#btnLogout:hover {
+    background-color: #A2AAAD;
+    color: white;
+    cursor: pointer;
+}
+
+#btnLogin {
+    background:#13294B;
+    color: white;
+}
+
+#err {
+    color: red;
+}
+
+#error {
+    color:red;
+    text-align: center;
+}
+
+.navigation {
+    background-color: #7BAFD4;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+.navigation a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+.navigation a:hover {
+    background-color: #A2AAAD;
+    color: white;
+  }
+
+.navigation a.active:hover {
+    background-color: #A2AAAD;
+    color: white;
+}
+  
+.navigation a.active {
+    background-color: #13294B;
+    color: white;
+  }
+
+#test {
+    background: #7BAFD4;
+}
+#testt {
+    background: #003087;
+}
+#board {
+    height: 493px;
+    width: 550px;
+    background: black;
+    margin: auto;
+    padding: auto;
+    border: 20px solid black;
+}
+
+.slot {
+    width: 78px;
+    height: 78px;
+    background: white;
+    /* border: 1px solid blue; */
+    border-radius: 50%;
+}
+
+.content {
+    text-align: center;
+}
+#resetGame {
+    margin-bottom: 30px;
+}
+
+#map {
+    height: 700px;
+    width: 700px;
+    margin: auto;
+}
+
+#wiki {
+    margin-top: 10px;
+    border: 6px solid #7BAFD4;
+    /* border-bottom: 10px solid blue; */
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.countryFlag {
+    width: 160px;
+    height: 120px;
+}
+
+.leagueFlag {
+    max-height: 120px;
+    max-width: 120px;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+#leagueOutput {
+    /* padding: 7px; */
+    /* border: black; */
+    border-collapse: collapse;
+}
+
+#resultNum {
+    color: green;
+    text-align: center;
+}
+
+.leagueRow {
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+/* td {
+    padding: 8px;
+    margin: 8px;
+} */

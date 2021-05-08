@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>426 Final Game</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Include links to CSS stylesheets below -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+    <link rel="stylesheet" href="style.css" /> -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    `https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyChbIeGtdAvmSh28BVMIPdE-hxaGiYGSEY",
+        authDomain: "final-426.firebaseapp.com",
+        projectId: "final-426",
+        storageBucket: "final-426.appspot.com",
+        messagingSenderId: "298770577212",
+        appId: "1:298770577212:web:646259b14746b916505039",
+        measurementId: "G-B0RSYW3KTX"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+  
+</head>
+
+<body>
+    <div id = "nav" class = "navigation" hidden = "false">
+        <a href="index.html">Home</a>
+        <a class="active" href="find.html">Discover</a>
+        <a href="game.html">Play</a>
+        <a href="wiki.html">Wikipedia</a>
+
+        <section id = "whenSignedIn" hidden = "true">
+          <button id="btnLogout" class="logBtn">Log out</button>
+        </section>
+      </div>
+        <div>
+        <section id = "whenSignedOut" hidden = "false">
+          <h1 id = "loginTitle">Log in or Sign up</h1>
+          <!-- <p id = "loginDescription">Once logged in, you can explore the features of the website.</p> -->
+          <input id="txtEmail" class="txt" type="email" placeholder="Email">
+          <input id="txtPassword" class="txt" type="password" placeholder="Password">
+          <div> 
+            <button id="btnLogin"class="logBtn">Log in</button>
+            <button id="btnSignUp" class="logBtn">Sign up</button>
+          </div>
+          <div> 
+            <p id="err"></p>
+          </div>
+        </section>
+        </div>
+  
+        <div class = "content">
+            <h1>DISCOVER</h1>
+            <h3>Hover your mouse over the markers to reveal each school's true identity</h3>
+
+            <div id = "map"></div>
+        </div>
+
+    <script src="app.js"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBFH4K2TaueesUDyACwWHzzEYhlsDORXY&callback=initMap">
+    </script>
+    <!-- <script async
+    src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_MAPS_API_KEY&callback=initMap">
+    </script> -->
+    <!-- previos key: AIzaSyChbIeGtdAvmSh28BVMIPdE-hxaGiYGSEY -->
+    <!-- HIDE API KEY -->
+    <!-- .env file 
+    put api in file -->
+    <!-- put -> in env file
+    GOOGLE_MAPS_API_KEY=//your api key here -->
+    
+
+
+    <script src="find.js"></script>
+
+</body>
+</html>
